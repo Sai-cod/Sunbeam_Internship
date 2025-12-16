@@ -19,6 +19,7 @@ body{
     left: 50%;
     top: 50%;
     transform: translate(-50%, 25%);
+    box-shadow: 2px 2px 30px 3px black;
 }
 
 #title{
@@ -61,7 +62,7 @@ form h2{
 .log{
     height: 45px;
     width: 100%;
-    background-color: rgb(109, 137, 241);
+    background-color: rgb(52, 52, 165);
     font-size: 20px;
     color: white;
     border: none;
@@ -70,5 +71,5 @@ form h2{
 
 .log:hover{
     cursor: pointer;
-    border: 3px solid rgb(52, 52, 165);
+    border: 5px solid rgb(76, 96, 169);
 }

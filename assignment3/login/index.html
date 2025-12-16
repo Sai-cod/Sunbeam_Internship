@@ -16,12 +16,25 @@
 
             <div class="email">
                 <h2>Email</h2>
-                <input class='einput' type="email" placeholder="email">
+                <div class="tick">
+                    <h1>✅</h1>
+                </div>
+                <input class='einput' type="email" placeholder="email" >
+                <div class="email-error" style="font-size: large; color: red; margin-top: 2px; display: none;;">
+                    <h6>Please Enter a valid email address</h6>
+                </div>
             </div>
+
 
             <div class="password">
                 <h2>Password</h2>
-                <input class='pinput' type="email" placeholder="Password">
+                <div class="tick_2">
+                    <h1>✅</h1>
+                </div>
+                <input class='pinput' type="password" placeholder="Password" >
+                <div class="pass-error" style="font-size: large; color: red; margin-top: 2px; display: none;">
+                    <h6>Password should be atleast 6 character long</h6>
+                </div>
             </div>
 
             <div class="login">
@@ -29,5 +42,6 @@
             </div>
         </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

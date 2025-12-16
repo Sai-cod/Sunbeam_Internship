@@ -19,6 +19,7 @@ body{
     left: 50%;
     top: 50%;
     transform: translate(-50%, 50%);
+    box-shadow: 2px 2px 20px 2px black;;
 }
 
 #title{
@@ -40,6 +41,7 @@ form h2{
     margin-top: 4%;
     margin-bottom: 10%;
     font-size: 12px;
+    position: relative;
 }
 
 .einput, .pinput{
@@ -48,6 +50,36 @@ form h2{
     font-size: 18px;
     padding: 5%;
     margin-top: 5px;
+}
+
+.tick{
+    height: 40px;
+    /* width: 90%; */
+    /* background-color: red; */
+    padding-top: 5px;
+    /* border: 2px solid green; */
+    position: absolute;
+    display: flex;
+    left: 90%;
+    display: none;
+    align-items: center;
+    justify-content: end;
+    /* z-index: 1; */
+}
+
+.tick_2{
+    height: 40px;
+    /* width: 90%; */
+    /* background-color: red; */
+    padding-top: 5px;
+    /* border: 2px solid green; */
+    position: absolute;
+    display: flex;
+    left: 90%;
+    display: none;
+    align-items: center;
+    justify-content: end;
+    /* z-index: 1; */
 }
 
 .login{

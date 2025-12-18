@@ -14,30 +14,37 @@
 
         <form>
 
-            <div class="email">
+            <div class="name" style="font-family: arial;">
                 <h2>Name</h2>
-                <div class="tick">
-                    <h1>✅</h1>
-                </div>
-                <input class='einput' type="email" placeholder="email" >
-                <div class="email-error" style="font-size: large; color: red; margin-top: 2px; display: none;;">
-                    <h6>Please Enter a valid email address</h6>
-                </div>
+                <input class="name-input" type="text" placeholder="Name" required>
             </div>
 
             <div class="email">
                 <h2>Email</h2>
-                <input class='einput' type="email" placeholder="Email">
+                <div class="tick">
+                    <h1>✅</h1>
+                </div>
+                <input class='einput' type="email" placeholder="email" >
+                <div class="email-error" style="font-size: large; color: red; margin-top: 2px; display: none;">
+                    <h6>Please Enter a valid email address</h6>
+                </div>
             </div>
+
 
             <div class="password">
+                <div class="tick2">
+                    <h1>✅</h1>
+                </div>
                 <h2>Password</h2>
                 <input class='pinput' type="password" placeholder="Password">
+                <div class="pass-error" style="font-size: large; color: red; margin-top: 2px; display: none;">
+                    <h6>Password should be atleast 6 character long</h6>
+                </div>
             </div>
 
-            <div class="email">
+            <div class="phone">
                 <h2>Phone Number</h2>
-                <input class='einput' type="number" placeholder="Phone Number">
+                <input class='number-input' type="text" placeholder="Phone Number required">
             </div>
 
             <div class="login">

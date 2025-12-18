@@ -21,6 +21,9 @@ form.addEventListener('submit', (e) => {
     let currentName = name.value;
     let currentPhone = ph_number.value;
 
+    let email_success = false;
+    let password_success = false;
+
     if(currentEmail.trim() === "") {
         email.style.border = '2px solid red'
         email_error.style.display = 'block'
@@ -29,6 +32,7 @@ form.addEventListener('submit', (e) => {
         email.style.border = '2px solid green'
         email_error.style.display = 'none'
         tick.style.display = 'block'
+        email_success = true
     }
 
     if(currentPassword.trim().length < 6) {
@@ -40,9 +44,19 @@ form.addEventListener('submit', (e) => {
         pass.style.border = '2px solid green'
         pass_error.style.display = 'none'
         tick2.style.display = 'block'
+        password_success = true
     }
 
-    
+    if(password_success && email_success) {
+        const json = {}
+        json.email = currentEmail
+        json.password = currentPassword
+        json.number = currentPhone
+        json.name = currentName
+
+    }
+
+
 
 });
 
